@@ -1,7 +1,8 @@
-- 사용한 DB와 테이블입니다.
+사용한 DB와 테이블입니다.
 ------------------------
+
 DB 생성: CREATE DATABASE pos;
-------------------------------------------------------------------------------------------------
+
 회원가입 테이블 생성 :
 CREATE table member(
  id INT IDENTITY(1,1) PRIMARY KEY,
@@ -9,7 +10,7 @@ CREATE table member(
  pw char(30) NOT NULL,
  joinday DATETIME DEFAULT GETDATE() 
 );
-------------------------------------------------------------------------
+
 상품 목록 테이블 생성
 create table product(
 	img VARBINARY(MAX),
